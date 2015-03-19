@@ -1,11 +1,11 @@
 {
-  "name": "ailes",
+  "name": "kowa-ailes",
   "version": "0.0.1",
-  "homepage": "https://github.com/aymerick/kowa",
+  "homepage": "https://github.com/aymerick/kowa-ailes",
   "authors": [
-    "Aymerick <aymerick@jehanne.org>"
+    "Aymerick JEHANNE"
   ],
-  "description": "ailes theme for kowa",
+  "description": "ailes theme for kowa, the static website manager",
   "license": "MIT",
   "private": true,
   "ignore": [
