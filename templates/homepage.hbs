@@ -3,6 +3,11 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <h1>{{tagline}}</h1>
+                {{#if @site.membership}}
+                    <p class='membership'>
+                      <a href="{{@site.membership}}" class="btn btn-primary btn-lg" target="_blank">{{t 'membership_form'}}</a>
+                    </p>
+                {{/if}}
             </div>
         </div>
     </div>
@@ -42,9 +47,20 @@
 <section class="join-us">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                {{joinText}}
-            </div>
+            {{#if @site.membership}}
+                <div class="col-md-3 col-md-offset-3">
+                    {{joinText}}
+                </div>
+                <div class="col-md-3">
+                    <p class='membership'>
+                        <a href="{{@site.membership}}" class="btn btn-primary btn-lg" target="_blank">{{t 'membership_form'}}</a>
+                    </p>
+                </div>
+            {{else}}
+                <div class="col-md-6 col-md-offset-3">
+                    {{joinText}}
+                </div>
+            {{/if}}
         </div>
     </div>
 </section>
